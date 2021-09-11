@@ -1,0 +1,15 @@
+.app {
+    margin: 0.25rem;
+}
+@media (min-width: 768px) {
+    .app {
+        margin: 1rem;
+    }
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}

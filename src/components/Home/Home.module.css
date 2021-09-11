@@ -1,0 +1,20 @@
+.homeWrapper {
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+img {
+    width: 7rem;
+}
+
+code {
+    background-color: silver;
+    padding: 0.25rem;
+}
+
+a {
+    font-weight: bolder;
+}

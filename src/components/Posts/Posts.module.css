@@ -1,0 +1,71 @@
+.postsWrapper {
+    padding: 0.375rem;
+    border: 1px solid silver;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .postsWrapper {
+        padding: 2rem;
+        border: 1px solid silver;
+        margin: 1rem;
+    }
+}
+
+h1 {
+    font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+input {
+    padding: 0.25rem;
+}
+
+::placeholder {
+    color: silver;
+}
+
+.post {
+    border: 1px solid gray;
+    padding: 1rem;
+    margin: 0.25rem;
+}
+.author {
+    font-size: 0.875rem;
+    color: silver;
+}
+
+.postsWrapper a,
+.postsWrapper a:hover,
+.postsWrapper a:focus,
+.postsWrapper a:active {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+h2 {
+    margin-block: 0;
+}
+
+h4 {
+    margin-block: 0;
+    font-size: 1rem;
+    color: gray;
+    font-weight: bold;
+}
+
+ul {
+    margin-block: 0;
+    padding-inline-start: 0;
+}

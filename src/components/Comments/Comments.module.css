@@ -1,0 +1,16 @@
+.comment {
+    font-size: 1rem;
+    color: darkgray;
+    font-weight: normal;
+    padding-inline-start: 1rem;
+}
+
+.author {
+    font-size: 0.875rem;
+    color: silver;
+    margin-block: 0;
+}
+
+p {
+    margin-block-start: 0;
+}

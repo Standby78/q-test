@@ -31,12 +31,13 @@ function App() {
         };
 
         getAllData().then(([posts, comments, users]) => {
-            posts.forEach((post: Post) => {
-                post.comments = comments.filter((comment: Comment) => comment.postId === post.id);
-                post.user = users.find((user: User) => user.id === post.userId);
+            posts?.forEach((post: Post) => {
+                post.comments =
+                    comments?.filter((comment: Comment) => comment.postId === post.id) || [];
+                post.user = users?.find((user: User) => user.id === post.userId) || {};
             });
             setPosts(posts);
-            setLoading(false);
+            if (posts) setLoading(false);
         });
     }, []);
 
@@ -49,7 +50,7 @@ function App() {
 
     const renderPost = (routerProps: RouteComponentProps<TParams>) => {
         const postId = parseInt(routerProps.match.params.id);
-        const post = posts.find((post: Post) => post.id === postId);
+        const post = posts?.find((post: Post) => post.id === postId);
         return post ? (
             <Posts helloWorld={helloWorld} posts={[post]} />
         ) : (
@@ -58,6 +59,7 @@ function App() {
     };
 
     console.log(`${helloWorld} ${App.displayName}`);
+
     return (
         <div className={styles.app}>
             <Switch>

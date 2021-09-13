@@ -24,7 +24,7 @@ const Posts = ({ posts, helloWorld }: PostsTypes) => {
         const Post = () => {
             return (
                 <div className={styles.post}>
-                    <p className={styles.author}>Posted by: {post.user.username}</p>
+                    <p className={styles.author}>Posted by: {post.user?.username}</p>
                     <h2>{post.title}</h2>
                     <p>{post.body}</p>
                     {post.comments?.length > 0 && (

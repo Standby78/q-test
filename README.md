@@ -29,6 +29,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm lint:js && npm lint:css`
+### `npm run lint:js ` and `npm run lint:css`
 
 Linting .js and .css files
